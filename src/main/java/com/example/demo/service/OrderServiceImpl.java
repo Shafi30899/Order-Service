@@ -19,7 +19,7 @@ public class OrderServiceImpl implements OrderService{
     }
 
     @Override
-    public Order UpdateOrderByFrId(String frId,Order order) {
+    public Order updateOrderByFrId(String frId,Order order) {
         orderRepository.add(frId,order);
         return orderRepository.get(frId);
     }
@@ -31,7 +31,7 @@ public class OrderServiceImpl implements OrderService{
     }
 
     @Override
-    public void DeleteOrderByFrId(String frId) {
+    public void deleteOrderByFrId(String frId) {
         orderRepository.remove(frId);
 
     }
